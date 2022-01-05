@@ -1,0 +1,13 @@
+
+<div class="class">
+
+name1:<input type="text" [(ngModel)]="name1" (click)="res(name1)"><br><br>
+name2:<input type="text" [(ngModel)]="name2" (click)="res(name2)"><br><br>
+
+Data:<select name="dropdown" id="dd" [(ngModel)]="name3" (click)="res(name3)">
+    <option *ngFor="let data of datas">{{data.name}}</option> 
+
+ </select>       
+<br> <br>
+ <button type="submit" routerLink="/page2">Submit</button>
+</div>
